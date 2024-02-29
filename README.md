@@ -27,7 +27,7 @@ _Coming soon_
 
 ### Jason Eshraghian
 
-<img src="static/jason-eshraghian.jpg" width=400px alt="Jason Eshraghian">
+<img src="static/jason_eshraghian.jpg" width=400px alt="Jason Eshraghian">
 
 Jason K. Eshraghian received the B.Eng. (electrical and electronic), L.L.B., and
 Ph.D. degrees from The University of Western Australia, Perth, WA, Australia, in

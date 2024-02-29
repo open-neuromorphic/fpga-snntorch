@@ -27,7 +27,7 @@ _Coming soon_
 
 ### Jason Eshraghian
 
-<img src="static/jason_eshraghian.jpg" width=400px alt="Jason Eshraghian">
+<img src="static/jason_eshraghian.jpg" width=300px alt="Jason Eshraghian">
 
 Jason K. Eshraghian received the B.Eng. (electrical and electronic), L.L.B., and
 Ph.D. degrees from The University of Western Australia, Perth, WA, Australia, in
@@ -40,7 +40,7 @@ circuits, and spiking neural networks.
 
 ### Fabrizio Ottati
 
-<img src="static/fabrizio.jpeg" width=400px alt="Fabrizio Ottati">
+<img src="static/fabrizio.jpeg" width=300px alt="Fabrizio Ottati">
 
 Fabrizio received his Ph.D. from Politecnico di Torino in 2024, with a thesis on
 efficient inference of spiking neural networks on FPGA platforms. He is now an

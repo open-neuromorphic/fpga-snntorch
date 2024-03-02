@@ -1,7 +1,5 @@
 import tonic
 import tonic.transforms as transforms
-from torch.utils.data import DataLoader
-import torch
 import numpy as np
 import h5py
 
@@ -15,8 +13,6 @@ frame_transform_test = transforms.Compose([transforms.Denoise(filter_time=10000)
                                     ])
 
 test_ds = tonic.datasets.DVSGesture(save_to=DATADIR, transform=frame_transform_test, train=False)
-test_dl = DataLoader(test_ds, batch_size=batch_size,
-                         collate_fn=tonic.collation.PadTensors(batch_first=False))
 
 nsamples = len(test_ds)
 arr = np.empty((nsamples, 150, 2, 32, 32), dtype='<i2')

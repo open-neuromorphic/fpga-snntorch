@@ -16,8 +16,8 @@ There are two tutorial components in this repo:
 
 | Title                                                                                           | Colab Link                                                                                                                                  |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Hardware-Aware Training of Spiking Neural Networks with [snnTorch](https://github.com/jeshraghian/snntorch) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jeshraghian/fpga-snntorch/blob/main/software/ISFPGA_SNN.ipynb) |
-| **Cheat-Sheet:** Hardware-Aware Training of Spiking Neural Networks with [snnTorch](https://github.com/jeshraghian/snntorch) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/jeshraghian/ESSCIRC23-os-neuromorphic-tutorial/blob/main/ESSCIRC_OSN_cheatsheet.ipynb) |
+| Hardware-Aware Training of Spiking Neural Networks with [snnTorch](https://github.com/jeshraghian/snntorch) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/open-neuromorphic/fpga-snntorch/blob/main/software/ISFPGA_SNN.ipynb) |
+| **Cheat-Sheet:** Hardware-Aware Training of Spiking Neural Networks with [snnTorch](https://github.com/jeshraghian/snntorch) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/open-neuromorphic/fpga-snntorch/blob/main/software/ISFPGA_SNN_cheatsheet.ipynb) |
 
 ## Hardware
 

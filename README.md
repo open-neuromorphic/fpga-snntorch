@@ -21,7 +21,10 @@ There are two tutorial components in this repo:
 
 ## Hardware
 
-_Coming soon_
+In the `hw` folder you can find:
+* the bistream of the accelerator, implemented for the Kria KV260 AI starter kit: `design_1_wrapper.bit`.
+* the PYNQ script to execute inference: `main.py`.
+* the addresses configuration used to communicate between the Zynq PS and the HLS IP: `xwrapper_hw.h`.
 
 ## Speakers
 

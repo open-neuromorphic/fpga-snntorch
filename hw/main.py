@@ -7,13 +7,15 @@ np.set_printoptions(threshold=sys.maxsize)
 
 overlay = Overlay("/home/ubuntu/isfpga-fabrizio/design_1_wrapper.bit")
 
-SAMPLES, TIMESTEPS, HI, WI, CI = 268, 150, 32, 32, 2
 
 # Input samples.
 # data = np.array((SAMPLES, TIMESTEPS*HI*WI*CI), dtype='<i1')
 
 data = np.load(open("test_data.npy", "rb"))
 labels = np.load(open("test_labels.npy", "rb"))
+
+SAMPLES, TIMESTEPS, HI, WI, CI = data.shape
+
 results = np.array((SAMPLES,))
 
 # Allocating data structures to communicate with the IP.
@@ -47,10 +49,3 @@ for sample in range(SAMPLES):
         tmp[i] += dout[t*TIMESTEPS + i]
 
     results[sample] = np.argmax(tmp)
-
-
-    # # Printing out  the data.
-    # print('\n' + '-'*80)
-    # print(dout)
-    # print('-'*80)
-

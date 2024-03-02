@@ -30,7 +30,7 @@ The HLS C++ code will be released in the short term.
 
 ## Speakers
 
-### Jason Eshraghian
+### Jason Eshraghian, Assistant Professor, UC Santa Cruz
 
 <img src="static/jason_eshraghian.jpg" width=300px alt="Jason Eshraghian">
 
@@ -43,7 +43,7 @@ The University of California at Santa Cruz, Santa Cruz, CA, USA. His research
 interests include neuromorphic computing, resistive random access memory (RRAM)
 circuits, and spiking neural networks.
 
-### Fabrizio Ottati
+### Fabrizio Ottati, AI Computer Architect, NXP Semiconductors
 
 <img src="static/fabrizio.jpeg" width=300px alt="Fabrizio Ottati">
 

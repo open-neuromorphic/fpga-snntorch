@@ -7,6 +7,17 @@ to FPGAs via HLS* co-presented by [Jason Eshraghian](https:///ncg.ucsc.edu) and 
 
 ![Abstract](/static/hls4nm-flow-horizontal.png)
 
+## Abstract
+
+How can we use natural intelligence to improve artificial intelligence? The human brain is a great place to look to improve modern neural networks and reduce their exorbitant energy costs. 
+While we may be far from having a complete understanding of the brain, we are at a point where a set of design principles have enabled us to build potentially more efficient deep learning tools. 
+Most of these are linked back to spiking neural networks (SNNs). In a cruel twist of irony, the neuromorphic hardware that is out there for research and/or commercial use, is considerably more expensive (and often less performant), and harder to obtain than a consumer-grade GPU. 
+How can we move towards using low-cost hardware that sits on our desk, or fits in a PCIe slot in our desktops, and accelerates SNNs? FPGAs might be the solution. 
+This tutorial will take a hands-on approach to learning how to train SNNs for hardware deployment on conventional GPUs, and running these models on a embedded class FPGA (AMD Kria KV260) for inference. 
+FPGA inference is achieved using high level synthesis, employing the AMD Vitis HLS compiler, and using a dataflow architecture of a deep SNN, with in-hardware testing.
+
+## Tutorial
+
 There are two tutorial components in this repo:
 
 * One for hardware-aware training spiking neural networks using [snnTorch](https://github.com/jeshraghian/snntorch)

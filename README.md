@@ -14,7 +14,7 @@ While we may be far from having a complete understanding of the brain, we are at
 Most of these are linked back to spiking neural networks (SNNs). In a cruel twist of irony, the neuromorphic hardware that is out there for research and/or commercial use, is considerably more expensive (and often less performant), and harder to obtain than a consumer-grade GPU. 
 How can we move towards using low-cost hardware that sits on our desk, or fits in a PCIe slot in our desktops, and accelerates SNNs? FPGAs might be the solution. 
 This tutorial will take a hands-on approach to learning how to train SNNs for hardware deployment on conventional GPUs, and running these models on a embedded class FPGA (AMD Kria KV260) for inference. 
-FPGA inference is achieved using high level synthesis, employing the AMD Vitis HLS compiler, and using a dataflow architecture of a deep SNN, with in-hardware testing.
+FPGA inference is achieved using high level synthesis, employing the AMD Vitis HLS compiler, and using a dataflow architecture[^1] of a deep SNN, with in-hardware testing.
 
 ## Tutorial
 
@@ -63,3 +63,5 @@ efficient inference of spiking neural networks on FPGA platforms. He is now an
 AI Computer Architect at NXP semiconductors. He is mainly interested in deep
 learning and computer architecture, beyond trying to learn how to write decent
 code.
+
+[^1]: Work carried out by Fabrizio Ottati during the Ph.D. at Politecnico di Torino.

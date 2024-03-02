@@ -61,5 +61,5 @@ circuits, and spiking neural networks.
 Fabrizio received his Ph.D. from Politecnico di Torino in 2024, with a thesis on
 efficient inference of spiking neural networks on FPGA platforms. He is now an
 AI Computer Architect at NXP semiconductors. He is mainly interested in deep
-learning and computer architecture, beyond trying to learn how to program
-decently.
+learning and computer architecture, beyond trying to learn how to write decent
+code.

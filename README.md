@@ -26,6 +26,8 @@ In the `hw` folder you can find:
 * the PYNQ script to execute inference: `main.py`.
 * the addresses configuration used to communicate between the Zynq PS and the HLS IP: `xwrapper_hw.h`.
 
+The HLS C++ code will be released in the short term. 
+
 ## Speakers
 
 ### Jason Eshraghian

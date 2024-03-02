@@ -5,15 +5,19 @@ import numpy as np
 import sys
 np.set_printoptions(threshold=sys.maxsize)
 
-overlay = Overlay("/home/ubuntu/overlay0/design_1_wrapper.bit")
+overlay = Overlay("/home/ubuntu/isfpga-fabrizio/design_1_wrapper.bit")
 
-SAMPLES, TIMESTEPS, HI, WI, CI = 1, 25, 32, 32, 2
+SAMPLES, TIMESTEPS, HI, WI, CI = 268, 150, 32, 32, 2
 
 # Input samples.
-data = np.array((SAMPLES, TIMESTEPS*HI*WI*CI), dtype='<i1')
+# data = np.array((SAMPLES, TIMESTEPS*HI*WI*CI), dtype='<i1')
+
+data = np.load(open("test_data.npy", "rb"))
+labels = np.load(open("test_labels.npy", "rb"))
+results = np.array((SAMPLES,))
 
 # Allocating data structures to communicate with the IP.
-din = allocate(shape=(TIMESTEPS*HI*WI*CI,), dtype='<i1')
+din = allocate(shape=(TIMESTEPS*HI*WI*CI,), dtype='<i2')
 dout = allocate(shape=(TIMESTEPS*12,), dtype=bool)
 
 # Configuring memory addresses for the IP.
@@ -37,9 +41,16 @@ for sample in range(SAMPLES):
 
     # Reading out data.
     dout.sync_from_device()
+    tmp = np.zeros((11,))
+    for t in range(TIMESTEPS):
+        for i in range(11):
+        tmp[i] += dout[t*TIMESTEPS + i]
 
-    # Printing out  the data.
-    print('\n' + '-'*80)
-    print(dout)
-    print('-'*80)
+    results[sample] = np.argmax(tmp)
+
+
+    # # Printing out  the data.
+    # print('\n' + '-'*80)
+    # print(dout)
+    # print('-'*80)
 

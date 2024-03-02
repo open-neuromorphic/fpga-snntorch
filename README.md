@@ -3,7 +3,7 @@
 This repository contains the notebooks related to hardware-aware training of
 spiking neural networks presented and their deployment onto FPGAs at ISFPGA 2024
 (Monterey, CA) for the workshop *Who needs neuromorphic hardware? Deploying SNNs
-to FPGAs via HLS* co-presented by Jason Eshraghian and Fabrizio Ottati.
+to FPGAs via HLS* co-presented by [Jason Eshraghian](https:///ncg.ucsc.edu) and Fabrizio Ottati.
 
 ![Abstract](/static/hls4nm-flow-horizontal.png)
 

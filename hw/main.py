@@ -5,8 +5,7 @@ import numpy as np
 import sys
 np.set_printoptions(threshold=sys.maxsize)
 
-overlay = Overlay("/home/ubuntu/isfpga-fabrizio/design_1_wrapper.bit")
-
+overlay = Overlay("design_1.bit")
 
 # Input samples.
 # data = np.array((SAMPLES, TIMESTEPS*HI*WI*CI), dtype='<i1')
@@ -23,11 +22,11 @@ din = allocate(shape=(TIMESTEPS*HI*WI*CI,), dtype='<i2')
 dout = allocate(shape=(TIMESTEPS*12,), dtype=bool)
 
 # Configuring memory addresses for the IP.
-overlay.wrapper_1.write(0x10, din.device_address)
-overlay.wrapper_1.write(0x14, din.device_address >> 32)
+overlay.snn_0.write(0x10, din.device_address)
+overlay.snn_0.write(0x14, din.device_address >> 32)
 
-overlay.wrapper_1.write(0x1c, dout.device_address)
-overlay.wrapper_1.write(0x20, dout.device_address >> 32)
+overlay.snn_0.write(0x1c, dout.device_address)
+overlay.snn_0.write(0x20, dout.device_address >> 32)
 
 for sample in range(SAMPLES):
     # Writing the sample to the IP.
@@ -35,10 +34,10 @@ for sample in range(SAMPLES):
     din.sync_to_device()
 
     # Starting inference.
-    overlay.wrapper_1.write(0x00, 1)
+    overlay.design_1_wrapper.write(0x00, 1)
 
     # Waiting for execution to finish.
-    while not overlay.wrapper_1.read(0x00) & 2:
+    while not overlay.design_1_wrapper.read(0x00) & 2:
         pass
 
     # Reading out data.
@@ -46,6 +45,6 @@ for sample in range(SAMPLES):
     tmp = np.zeros((11,))
     for t in range(TIMESTEPS):
         for i in range(11):
-        tmp[i] += dout[t*TIMESTEPS + i]
+            tmp[i] += dout[t*TIMESTEPS + i]
 
     results[sample] = np.argmax(tmp)

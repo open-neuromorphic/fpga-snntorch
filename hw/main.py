@@ -34,10 +34,10 @@ for sample in range(SAMPLES):
     din.sync_to_device()
 
     # Starting inference.
-    overlay.design_1_wrapper.write(0x00, 1)
+    overlay.snn_0.write(0x00, 1)
 
     # Waiting for execution to finish.
-    while not overlay.design_1_wrapper.read(0x00) & 2:
+    while not overlay.snn_0.read(0x00) & 2:
         pass
 
     # Reading out data.

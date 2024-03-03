@@ -32,12 +32,14 @@ There are two tutorial components in this repo:
 
 ## Hardware
 
-In the `hw` folder you can find:
-* the bistream of the accelerator, implemented for the Kria KV260 AI starter kit: `design_1_wrapper.bit`.
-* the PYNQ script to execute inference: `main.py`.
+In the `hw` folder you will find:
+* the bistream of the accelerator, implemented for the Kria KV260 AI starter kit: `design_1.bit`.
+* the PYNQ script to execute inference: `main.py` and some utils `utils.py`.
 * the addresses configuration used to communicate between the Zynq PS and the HLS IP: `xwrapper_hw.h`.
+* the hardware handoff file `design_1.hwh`.
 
-The HLS C++ code will be released in the short term. 
+This material will be provided ASAP.
+The HLS C++ code will be released in the upcoming weeks.
 
 ## Speakers
 
